@@ -2,18 +2,52 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows:2fr 10fr 1fr;
+    grid-template-rows:3fr 20fr 1fr;
     background-color:bisque;
+    padding: 0;
+    margin: 0;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
 }
 .header {
-    grid-column: 1 /-1;
+    grid-column: 2;
     grid-row: 1;
     background-color: aquamarine;
 }
 .sidebar {
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 1/ -1;
     background-color: blueviolet;
+    display: flex;
+    flex-flow: column;
+    font-size: 2rem;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.sidebar .logo {
+    height: 100px;
+    font-size: 3rem;
+    padding: 5%;
+}
+.sidebar nav li {
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.sidebar span {
+    margin-right: 20px;
+}
+.sidebar nav a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.sidebar nav li:hover {
+    box-shadow: 0px 1px 3px;
+    padding-left: 55px;
+    transition: padding 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .main {
     grid-column: 2;

@@ -6,10 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
 </head>
 <body>
     <div class="header">Header</div>
-    <div class="sidebar">Dashboard</div>
+    <aside class="sidebar">
+        <div class="logo"><span class="mdi mdi-desktop-mac-dashboard"> </span>Dashboard</div>
+        <nav class="links">
+            <ul>
+                <li><a href="/"><span class="mdi mdi-home"></span>Home</a></li>
+                <li><a href="/profile"><span class="mdi mdi-account-cog"></span>Profile</a></li>
+                <li><a href="/messeges"><span class="mdi mdi-android-messages"></span>Messeges</a></li>
+                <li><a href="/history"><span class="mdi mdi-history"></span>History</a></li>
+                <li><a href="/tasks"><span class="mdi mdi-clipboard-multiple"></span>Tasks</a></li>
+                <li><a href="/communities"><span class="mdi mdi-human-queue"></span>Communities</a></li>
+            </ul>
+        </nav>
+        <nav class="extras">
+            <ul>
+                <li><a href="/settings"><span class="mdi mdi-cogs"></span>Settings</a></li>
+                <li><a href="/support"><span class="mdi mdi-chat-question"></span>Support</a></li>
+                <li><a href="/privacy"><span class="mdi mdi-shield-account-variant"></span>Privacy</a></li>
+            </ul>
+        </nav>
+    </aside>
     <div class="main">Your Projects</div>
     <div class="footer">footer</div>
     
