@@ -133,12 +133,15 @@ nav ul{
 .main .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap:100px;
+    gap:50px;
     padding: 50px;
 }
 .main .project {
+    display: flex;
+    flex-direction: column;
     border: 0px solid;
     padding: 30px;
+    margin: 5px;
     background-color: #FFF;
     width: 90%;
     border-radius: 30px;
@@ -150,16 +153,33 @@ nav ul{
     padding-bottom: 10px;
     font-size: 2rem;
 }
+.project .actions {
+    font-size: 2.5rem;
+    padding-top: 50px;
+    justify-self:end;
+    align-self:flex-end;
+}
+.project .actions span:hover {
+    border-radius: 20%;
+}
+.project .actions span:hover {
+    box-shadow: 0px 10px 10px rgba(1, 1, 1, 0.4);
+    transition: box-shadow 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 .main .announcements {
     display: flex;
     flex-direction: column;
     gap: 100px;
     padding: 50px;
 }
-.announcements .tab {
-    border-radius: 30px;
+.announcements .tab-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.announcements .tab-text {
     padding: 10px;
-    box-shadow: 2px 2px 10px rgba(1, 1, 1, 0.4);
+    box-shadow: 3px 3px 10px rgba(1, 1, 1, 0.3);
 }
 .footer {
     grid-column: 1/-1;
