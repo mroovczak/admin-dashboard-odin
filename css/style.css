@@ -77,6 +77,13 @@ nav ul{
     font-size: 1.5rem;
     align-self: center;
 }
+.header button:hover {
+    font-size: 1.6rem;
+    background-color: rgb(132, 0, 255);
+    transition: font-size 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    /* text-indent: 10px; */
+    /* box-shadow: 1px 1px 3px rgb(255, 255, 255); */
+}
 .sidebar {
     grid-column: 1;
     grid-row: 1/ -1;
