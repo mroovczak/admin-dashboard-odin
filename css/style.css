@@ -54,9 +54,12 @@ nav ul{
     /* padding: 10px; */
 }
 .header .userProfile {
+    display: flex;
     font-size: 1.5rem;
     place-self: center;
     padding-right: 30px;
+    text-align: center;
+    align-items: center;
 }
 .header .title {
     display: block;
