@@ -3,7 +3,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows:3fr 20fr 1fr;
-    background-color:bisque;
+    background-color: #FFF;
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -136,8 +136,8 @@ nav ul{
 .main .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap:50px;
-    padding: 50px;
+    gap:70px;
+    padding: 20px;
 }
 .main .project {
     display: flex;
@@ -166,8 +166,10 @@ nav ul{
     border-radius: 20%;
 }
 .project .actions span:hover {
-    box-shadow: 0px 10px 10px rgba(1, 1, 1, 0.4);
-    transition: box-shadow 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    /* box-shadow: 0px 10px 10px rgba(1, 1, 1, 0.4); */
+    text-shadow: 2px 2px 5px rgba(1, 1, 1, 0.6);
+    /* color: rgb(47, 47, 47); */
+    transition: text-shadow 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .main .announcements {
     display: flex;
